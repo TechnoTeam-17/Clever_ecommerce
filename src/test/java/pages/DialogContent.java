@@ -12,7 +12,7 @@ import org.testng.Assert;
 
 import java.time.Duration;
 
-public class DialogContent extends Parent{
+public class DialogContent extends Pages.Parent {
 
     public DialogContent() {
         PageFactory.initElements(GWD.getDriver(), this);
