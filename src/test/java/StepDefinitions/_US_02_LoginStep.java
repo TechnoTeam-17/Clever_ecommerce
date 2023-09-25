@@ -17,14 +17,15 @@ public class _US_02_LoginStep {
     @When("Enter username and password and click Sign in button")
     public void enterUsernameandpasswordandclickSigninButton() {
 
-        dc.mySendKeys(dc.eMail, "TechnoTeam17@gmail.com");
-        dc.mySendKeys(dc.password, "Techno17");
+        dc.mySendKeys(dc.eMail, "hannaesma@gmail.com");
+        dc.mySendKeys(dc.password, "hannaesma");
         dc.myClick(dc.SigninButton);
     }
 
 
     @Then("User should login successfully")
     public void userShouldLoginSuccessfully() {
+    dc.verifyContainsText(dc.txtCleverLogin,"My account");
 
     }
 }
