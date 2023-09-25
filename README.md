@@ -75,7 +75,7 @@ List of Dependencies
 | TestNG                  | Browser Automation Framework.       |
 | slf4j                   | The Simple Logging Facade for Java. | 
 | slf4j-beta2             | The Simple Logging Facade for Java. |
-| cucumber7-adapter       | The Apache Commons IO library       |
+| cucumber7-adapter       | Aventstack Library                  |
 | commons-lang3           | The Apache Commons IO library       |
 | commons.io              | The Apache Commons IO library       |
 
