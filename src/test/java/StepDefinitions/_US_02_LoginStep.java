@@ -14,15 +14,17 @@ public class _US_02_LoginStep {
         GWD.getDriver().get("https://cleverppc.com/prestashop4/index.php?controller=authentication&back=my-account");
     }
 
-    @When("Enter username and password and click login button")
-    public void enterUsernameAndPasswordAndClickLoginButton() {
+    @When("Enter username and password and click Sign in button")
+    public void enterUsernameandpasswordandclickSigninButton() {
 
         dc.mySendKeys(dc.eMail, "TechnoTeam17@gmail.com");
         dc.mySendKeys(dc.password, "Techno17");
+        dc.myClick(dc.SigninButton);
     }
 
 
     @Then("User should login successfully")
     public void userShouldLoginSuccessfully() {
+
     }
 }
