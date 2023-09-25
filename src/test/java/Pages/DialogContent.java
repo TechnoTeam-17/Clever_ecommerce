@@ -2,17 +2,12 @@ package Pages;
 
 import Utilities.GWD;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
-import java.time.Duration;
-
-public class DialogContent extends Parent{
+public class DialogContent extends Parent {
 
     public DialogContent() {
         PageFactory.initElements(GWD.getDriver(), this);
@@ -24,17 +19,17 @@ public class DialogContent extends Parent{
         // istemiyorum.
     }
 
-    @FindBy(css="input[formcontrolname='username']")
-    public WebElement username;
+    @FindBy(xpath="//input[@id='email']")
+    public WebElement eMail;
 
-    @FindBy(css="input[formcontrolname='password']")
+    @FindBy(xpath="//input[@id='passwd']")
     public WebElement password;
 
-    @FindBy(css="button[aria-label='LOGIN']")
-    public WebElement loginButton;
+    @FindBy(id="SubmitLogin")
+    public WebElement SigninButton;
 
-    @FindBy(css="span[class='mat-mdc-tooltip-trigger logo-text']")
-    public WebElement txtTechnoStudy;
+    @FindBy(css="[class='info-account']")
+    public WebElement txtCleverLogin;
 
     @FindBy(xpath="//ms-add-button[contains(@tooltip,'ADD')]//button")
     public WebElement addButton;
