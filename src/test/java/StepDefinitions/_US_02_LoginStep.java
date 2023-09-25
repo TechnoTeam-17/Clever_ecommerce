@@ -17,15 +17,17 @@ public class _US_02_LoginStep {
     @When("Enter username and password and click Sign in button")
     public void enterUsernameandpasswordandclickSigninButton() {
 
-        dc.mySendKeys(dc.eMail, "hannaesma@gmail.com");
-        dc.mySendKeys(dc.password, "hannaesma");
+        dc.mySendKeys(dc.eMail, "miriam@gmail.com");
+        dc.mySendKeys(dc.password, "miriam");
         dc.myClick(dc.SigninButton);
     }
 
 
     @Then("User should login successfully")
-    public void userShouldLoginSuccessfully() {
-    dc.verifyContainsText(dc.txtCleverLogin,"My account");
+    public void userShouldLoginSuccessfully() throws InterruptedException {
+        Thread.sleep(2000);
+
+    dc.verifyContainsText(dc.txtCleverLogin,"Welcome");
 
     }
 }
