@@ -85,6 +85,36 @@ public class DialogContent extends Parent {
     private WebElement searchAcademicPeriod;
 
 
+    @FindBy(linkText="Sitemap")
+    public WebElement siteMap;
+
+    @FindBy(linkText="View a list of my addresses")
+    public WebElement addresses;
+
+    @FindBy(xpath="(//span[text()='Add a new address'])")
+    public WebElement newAddress;
+
+    @FindBy(id="address1")
+    public WebElement address1;
+
+    @FindBy(id="city")
+    public WebElement city;
+
+    @FindBy(id="uniform-id_state")
+    public WebElement state;
+
+    @FindBy(xpath="(//option[value()='13'])")
+    public WebElement illinois;
+
+    @FindBy(id="postcode")
+    public WebElement postcode;
+
+    @FindBy(id="phone")
+    public WebElement phone;
+
+    @FindBy(id="alias")
+    public WebElement alias;
+
     public WebElement getWebElement(String strElement){
         switch (strElement){
             case "addButton": return this.addButton;
@@ -99,6 +129,9 @@ public class DialogContent extends Parent {
             case "gradeLevel": return this.gradeLevel;
             case "gradeLevel2": return this.gradeLevel2;
             case "searchAcademicPeriod": return this.searchAcademicPeriod;
+            case "sitemap" : return this.siteMap;
+            case "addresses" : return this.addresses;
+            case "newAddress" : return this.newAddress;
         }
 
         return null;
