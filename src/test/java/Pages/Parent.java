@@ -37,7 +37,7 @@ public class Parent {
         wait.until(ExpectedConditions.textToBePresentInElement(element,value));
         Assert.assertTrue(element.getText().toLowerCase().contains(value.toLowerCase()));
         //action la ESC ye basarak açık kutucuk veya mesaj var ise kapat
-        new Actions(GWD.getDriver()).sendKeys(Keys.ESCAPE).build().perform();
+        //new Actions(GWD.getDriver()).sendKeys(Keys.ESCAPE).build().perform();
     }
 
     public void myJsClick(WebElement element){
