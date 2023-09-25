@@ -39,14 +39,6 @@ public class DialogContent extends Parent {
     public WebElement codeInput;
     @FindBy(xpath="//ms-save-button/button")
     public WebElement saveButton;
-    @FindBy(xpath="//div[contains(text(),'successfully')]")
-    public WebElement successMessage;
-
-    @FindBy(xpath ="//ms-text-field[@formcontrolname='shortName']//input" )
-    public WebElement ShortName;
-
-    @FindBy(xpath="//div[contains(text(),'already exists')]")
-    public WebElement alreadyExist;
 
     @FindBy(xpath="//mat-form-field//input[@data-placeholder='Name']")
     public WebElement searchInput;
@@ -59,30 +51,6 @@ public class DialogContent extends Parent {
 
     @FindBy(xpath="//button[@type='submit']")
     public WebElement deleteDialogBtn;
-
-    @FindBy(xpath="//ms-text-field[@formcontrolname='budgetAccountIntegrationCode']//input")
-    private WebElement integrationCode;
-
-    @FindBy(xpath="//ms-integer-field[@formcontrolname='priority']/input")
-    private WebElement priorityCode;
-
-    @FindBy(xpath="//mat-slide-toggle[@formcontrolname='active']")
-    private WebElement toggleBar;
-
-    @FindBy(xpath="//mat-select//span[text()='Academic Period']")
-    private WebElement academicPeriod;
-
-    @FindBy(xpath="//mat-option/span")
-    private WebElement academicPeriod1;
-
-    @FindBy(xpath="(//span[text()='Grade Level'])[1]")
-    private WebElement gradeLevel;
-
-    @FindBy(xpath = "(//*[@role='option'])[4]")
-    private WebElement gradeLevel2;
-
-    @FindBy(xpath="//mat-select//span[text()='Test 2024']")
-    private WebElement searchAcademicPeriod;
 
 
     @FindBy(linkText="Sitemap")
@@ -121,14 +89,6 @@ public class DialogContent extends Parent {
             case "saveButton": return this.saveButton;
             case "nameInput": return this.nameInput;
             case "codeInput": return this.codeInput;
-            case "integrationCode": return this.integrationCode;
-            case "priorityCode": return this.priorityCode;
-            case "toggleBar": return this.toggleBar;
-            case "academicPeriod": return this.academicPeriod;
-            case "academicPeriod1": return this.academicPeriod1;
-            case "gradeLevel": return this.gradeLevel;
-            case "gradeLevel2": return this.gradeLevel2;
-            case "searchAcademicPeriod": return this.searchAcademicPeriod;
             case "sitemap" : return this.siteMap;
             case "addresses" : return this.addresses;
             case "newAddress" : return this.newAddress;
