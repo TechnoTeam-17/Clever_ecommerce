@@ -20,15 +20,50 @@ public class DialogContent extends Parent {
         // ben artık find element le uğraşmak
         // istemiyorum.
     }
+    @FindBy(xpath = "//a[@class='login']")
+    public WebElement SigninButton;
+
+    @FindBy(xpath = "(//input[@type='email'])[1]")
+    public WebElement email;
+
+    @FindBy(id = "SubmitCreate")
+    public WebElement CreateAccount;
+
+    @FindBy(name = "id_gender")
+    public WebElement title;
+
+    @FindBy(id = "customer_firstname")
+    public WebElement firstName;
+
+    @FindBy(id = "customer_lastname")
+    public WebElement lastName;
+
+    @FindBy(id = "email")
+    public WebElement Email;
+
+    @FindBy(id = "passwd")
+    public WebElement password;
+
+    @FindBy(id = "uniform-days")
+    public WebElement day;
+
+    @FindBy(id = "months")
+    public WebElement month;
+
+    @FindBy(id = "years")
+    public WebElement years;
+
+    @FindBy(name = "submitAccount")
+    public WebElement create;
 
     @FindBy(xpath="//input[@id='email']")
     public WebElement eMail;
 
     @FindBy(xpath="//input[@id='passwd']")
-    public WebElement password;
+    public WebElement Password;
 
     @FindBy(id="SubmitLogin")
-    public WebElement SigninButton;
+    public WebElement signinButton;
 
     @FindBy(css="[class='info-account']")
     public WebElement txtCleverLogin;
@@ -58,7 +93,7 @@ public class DialogContent extends Parent {
     @FindBy(linkText="Sitemap")
     public WebElement siteMap;
 
-    @FindBy(linkText="View a list of my addresses")
+    @FindBy(xpath="//a[@href='https://cleverppc.com/prestashop4/index.php?controller=addresses']")
     public WebElement addresses;
 
     @FindBy(xpath="(//span[text()='Add a new address'])")
@@ -73,7 +108,7 @@ public class DialogContent extends Parent {
     @FindBy(id="uniform-id_state")
     public WebElement state;
 
-    @FindBy(xpath="(//option[value()='13'])")
+    @FindBy(xpath="*//option[text()='Illinois']")
     public WebElement illinois;
 
     @FindBy(id="postcode")
@@ -82,8 +117,12 @@ public class DialogContent extends Parent {
     @FindBy(id="phone")
     public WebElement phone;
 
+    @FindBy(id="phone_mobile")
+    public WebElement mobilephone;
+
     @FindBy(id="alias")
     public WebElement alias;
+
 
     @FindBy(css="[title='Xu Clothing']")
     public WebElement Anasayfa;
@@ -105,6 +144,11 @@ public class DialogContent extends Parent {
     public List<WebElement> demoview;
 
 
+    @FindBy(id="submitAddress")
+    public WebElement save;
+
+    @FindBy(xpath="//h3[@class='page-subheading']")
+    public WebElement verifyAddress;
 
 
     public WebElement getWebElement(String strElement){
