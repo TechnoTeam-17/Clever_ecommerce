@@ -7,6 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import java.util.List;
+
 public class DialogContent extends Parent {
 
     public DialogContent() {
@@ -121,11 +123,33 @@ public class DialogContent extends Parent {
     @FindBy(id="alias")
     public WebElement alias;
 
+
+    @FindBy(css="[title='Xu Clothing']")
+    public WebElement Anasayfa;
+    @FindBy(xpath="(//*[@title='Dresses'])[2]")
+    public WebElement Dresses;
+
+    @FindBy(css="[class='right-block']>h5>a")
+    public List<WebElement> dressler;
+
+    @FindBy(xpath="//*[span='Add to cart']")
+    public WebElement submit;
+
+    @FindBy(css="[class='button-container']>span>span")
+    public WebElement continueshop;
+    @FindBy(css="[class='shopping_cart']>a")
+    public WebElement viewCart;
+
+    @FindBy(css="[class='cart_ref']")
+    public List<WebElement> demoview;
+
+
     @FindBy(id="submitAddress")
     public WebElement save;
 
     @FindBy(xpath="//h3[@class='page-subheading']")
     public WebElement verifyAddress;
+
 
     public WebElement getWebElement(String strElement){
         switch (strElement){
