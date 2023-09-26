@@ -18,15 +18,50 @@ public class DialogContent extends Parent {
         // ben artık find element le uğraşmak
         // istemiyorum.
     }
+    @FindBy(xpath = "//a[@class='login']")
+    public WebElement SigninButton;
+
+    @FindBy(xpath = "(//input[@type='email'])[1]")
+    public WebElement email;
+
+    @FindBy(id = "SubmitCreate")
+    public WebElement CreateAccount;
+
+    @FindBy(name = "id_gender")
+    public WebElement title;
+
+    @FindBy(id = "customer_firstname")
+    public WebElement firstName;
+
+    @FindBy(id = "customer_lastname")
+    public WebElement lastName;
+
+    @FindBy(id = "email")
+    public WebElement Email;
+
+    @FindBy(id = "passwd")
+    public WebElement password;
+
+    @FindBy(id = "uniform-days")
+    public WebElement day;
+
+    @FindBy(id = "months")
+    public WebElement month;
+
+    @FindBy(id = "years")
+    public WebElement years;
+
+    @FindBy(name = "submitAccount")
+    public WebElement create;
 
     @FindBy(xpath="//input[@id='email']")
     public WebElement eMail;
 
     @FindBy(xpath="//input[@id='passwd']")
-    public WebElement password;
+    public WebElement Password;
 
     @FindBy(id="SubmitLogin")
-    public WebElement SigninButton;
+    public WebElement signinButton;
 
     @FindBy(css="[class='info-account']")
     public WebElement txtCleverLogin;
