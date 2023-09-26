@@ -18,8 +18,8 @@ public class _US_02_LoginStep {
     public void enterUsernameandpasswordandclickSigninButton() {
 
         dc.mySendKeys(dc.eMail, "miriam@gmail.com");
-        dc.mySendKeys(dc.password, "miriam");
-        dc.myClick(dc.SigninButton);
+        dc.mySendKeys(dc.Password, "miriam");
+        dc.myClick(dc.signinButton);
     }
 
 
