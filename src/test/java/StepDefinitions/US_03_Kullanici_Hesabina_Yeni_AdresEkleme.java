@@ -4,7 +4,7 @@ import Pages.DialogContent;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class US_03_Kullanici_Hesabina_Yeni_Adres {
+public class US_03_Kullanici_Hesabina_Yeni_AdresEkleme {
     DialogContent dc = new DialogContent();
     @When("Add a new address")
     public void addANewAddress() {

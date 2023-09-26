@@ -1,14 +1,13 @@
 package StepDefinitions;
 
 import Pages.DialogContent;
-import Pages.LeftNav;
 import Utilities.GWD;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class _US_01_Kullanici_Kaydi_OlusturmaRegister {
+public class _US_01_Kullanici_Kaydi_Olusturma_Register {
     DialogContent dc = new DialogContent();
     LeftNav In=new LeftNav();
 

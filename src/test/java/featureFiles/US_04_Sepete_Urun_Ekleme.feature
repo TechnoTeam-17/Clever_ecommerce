@@ -5,12 +5,11 @@ Feature:add product to cart
 
   Background:
 
-    Given Navigate to Campus
-    When Enter username and password and click login button
+    Given Navigate to clever ECommerce login
+    When Enter username and password and click Sign in button
     Then User should login successfully
 
-
-    Scenario:Add to Cart
+  Scenario:Add to Cart
 
       Given I am on the product page
       When I click on the "Add to Cart" button for the product

@@ -20,6 +20,7 @@ public class DialogContent extends Parent {
         // ben artık find element le uğraşmak
         // istemiyorum.
     }
+    //***************************US_01 Locaterlar
     @FindBy(xpath = "//a[@class='login']")
     public WebElement SigninButton;
 
@@ -56,6 +57,7 @@ public class DialogContent extends Parent {
     @FindBy(name = "submitAccount")
     public WebElement create;
 
+    //***************************US_02 Locaterlar
     @FindBy(xpath="//input[@id='email']")
     public WebElement eMail;
 
@@ -67,6 +69,8 @@ public class DialogContent extends Parent {
 
     @FindBy(css="[class='info-account']")
     public WebElement txtCleverLogin;
+
+    //***************************US_03 Locaterlar************************************************
 
     @FindBy(xpath="//ms-add-button[contains(@tooltip,'ADD')]//button")
     public WebElement addButton;
@@ -123,7 +127,6 @@ public class DialogContent extends Parent {
     @FindBy(id="alias")
     public WebElement alias;
 
-
     @FindBy(css="[title='Xu Clothing']")
     public WebElement Anasayfa;
     @FindBy(xpath="(//*[@title='Dresses'])[2]")
@@ -143,12 +146,71 @@ public class DialogContent extends Parent {
     @FindBy(css="[class='cart_ref']")
     public List<WebElement> demoview;
 
-
     @FindBy(id="submitAddress")
     public WebElement save;
 
     @FindBy(xpath="//h3[@class='page-subheading']")
     public WebElement verifyAddress;
+
+
+    //***************************US_04 Locaterlar*************************************************************
+
+
+
+
+
+
+
+
+
+
+    //***************************US_05 Locaterlar***************************************************************
+
+
+
+
+
+
+
+
+
+    //***************************US_06 Locaterlar***************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //***************************US_07 Locaterlar***************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //***************************US_08 Locaterlar***************************************************************
+
+
+
+
+
 
 
     public WebElement getWebElement(String strElement){
@@ -184,5 +246,6 @@ public class DialogContent extends Parent {
         myClick(deleteDialogBtn);
 
         // silme ıslemı dıalogların ortak noktası olması sebebıyle buraya aldık. Silme islemi yapacagımız her seferınde tekrar tekrar kod yazmayalım dırekt cagıralım dıye aldık.
-    }
+            }
+
 }
