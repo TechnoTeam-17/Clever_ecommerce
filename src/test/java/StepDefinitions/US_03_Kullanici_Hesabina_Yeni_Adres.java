@@ -1,6 +1,7 @@
 package StepDefinitions;
 
 import Pages.DialogContent;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class US_03_Kullanici_Hesabina_Yeni_Adres {
@@ -16,8 +17,15 @@ public class US_03_Kullanici_Hesabina_Yeni_Adres {
         dc.mySendKeys(dc.city,"Chicago");
         dc.mySendKeys(dc.postcode,"60611");
         dc.mySendKeys(dc.phone,"3099895555");
+        dc.mySendKeys(dc.mobilephone,"3094563348");
         dc.mySendKeys(dc.alias,"Chicago Address");
+        dc.myClick(dc.save);
 
 
+
+    }
+
+    @Then("My Address should be displayed")
+    public void myAddressShouldBeDisplayed() {dc.verifyContainsText(dc.verifyAddress,"ADDRESS");
     }
 }

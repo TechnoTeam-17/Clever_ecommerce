@@ -56,7 +56,7 @@ public class DialogContent extends Parent {
     @FindBy(linkText="Sitemap")
     public WebElement siteMap;
 
-    @FindBy(linkText="View a list of my addresses")
+    @FindBy(xpath="//a[@href='https://cleverppc.com/prestashop4/index.php?controller=addresses']")
     public WebElement addresses;
 
     @FindBy(xpath="(//span[text()='Add a new address'])")
@@ -71,7 +71,7 @@ public class DialogContent extends Parent {
     @FindBy(id="uniform-id_state")
     public WebElement state;
 
-    @FindBy(xpath="(//option[value()='13'])")
+    @FindBy(xpath="*//option[text()='Illinois']")
     public WebElement illinois;
 
     @FindBy(id="postcode")
@@ -80,8 +80,17 @@ public class DialogContent extends Parent {
     @FindBy(id="phone")
     public WebElement phone;
 
+    @FindBy(id="phone_mobile")
+    public WebElement mobilephone;
+
     @FindBy(id="alias")
     public WebElement alias;
+
+    @FindBy(id="submitAddress")
+    public WebElement save;
+
+    @FindBy(xpath="//h3[@class='page-subheading']")
+    public WebElement verifyAddress;
 
     public WebElement getWebElement(String strElement){
         switch (strElement){
