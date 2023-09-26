@@ -19,15 +19,12 @@ public class _US_01_Kullanici_Kaydi_OlusturmaRegister {
 
     @When("Enter click Sign in button")
     public void enterUsernameandpasswordandclickSigninButton() {
-        //dc.mySendKeys(dc.loginButton, " ");
-        //dc.mySendKeys(dc.mail,"");
-        //dc.mySendKeys(dc.password, "");
-
-
+        dc.mySendKeys(dc.SigninButton, " ");
+        dc.mySendKeys(dc.email,"");
+        dc.mySendKeys(dc.password, "");
 
 
     }
-
     @Given("Navigate to Site")
     public void navigateToSite() {
     }
