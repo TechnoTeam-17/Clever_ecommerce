@@ -9,7 +9,6 @@ import io.cucumber.java.en.When;
 
 public class _US_01_Kullanici_Kaydi_Olusturma_Register {
     DialogContent dc = new DialogContent();
-    LeftNav In=new LeftNav();
 
     @Given("Navigate to clever ECommerce register")
     public void navigateToCleverECommerce() {
