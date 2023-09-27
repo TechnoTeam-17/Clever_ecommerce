@@ -167,11 +167,20 @@ public class DialogContent extends Parent {
     //***************************US_05 Locaterlar***************************************************************
 
 
+   @FindBy(css = "span[class='category-name']")
+    public WebElement dressesText;
 
+    @FindBy(css = "span[class='heading-counter']")
+    public WebElement headingCounter;
 
+    @FindBy(xpath = "(//div[@class='product-count'])[1]")
+    public WebElement productCount;
 
+    @FindBy(css = "[id='product_list'] > li")
+    public List<WebElement> allProducts;
 
-
+    @FindBy(xpath = "(//*[@title='Dresses'])[2]")
+    public WebElement dressesButton;
 
 
     //***************************US_06 Locaterlar***************************************************************
