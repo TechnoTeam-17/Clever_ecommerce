@@ -1,5 +1,5 @@
 Feature:Login functionality
-
+  @SmokeTest
   Scenario: Login with valid usernama amd password
 
     Given Navigate to Site
