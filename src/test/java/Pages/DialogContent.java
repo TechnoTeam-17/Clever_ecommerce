@@ -45,7 +45,7 @@ public class DialogContent extends Parent {
     @FindBy(id = "passwd")
     public WebElement password;
 
-    @FindBy(id = "uniform-days")
+    @FindBy(id = "days")
     public WebElement day;
 
     @FindBy(id = "months")
