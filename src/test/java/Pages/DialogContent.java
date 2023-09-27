@@ -202,6 +202,22 @@ public class DialogContent extends Parent {
     //***************************US_07 Locaterlar***************************************************************
 
 
+    @FindBy(linkText="Proceed to checkout")
+    public WebElement proceedCheckOut;
+
+ @FindBy(xpath="//select[@id='id_address_delivery']")
+    public WebElement address;
+
+
+ @FindBy(xpath="//input[@id='cgv']")
+    public WebElement termsCheckBox;
+
+ @FindBy(xpath="//input[@id='cgv']")
+    public WebElement selectPaypal;
+
+
+
+
 
 
 
@@ -231,6 +247,10 @@ public class DialogContent extends Parent {
             case "sitemap" : return this.siteMap;
             case "addresses" : return this.addresses;
             case "newAddress" : return this.newAddress;
+            case "proceedCheckOut" : return this.proceedCheckOut;
+            case "address" : return this.address;
+            case "termsCheckBox" : return this.termsCheckBox;
+
         }
 
         return null;
