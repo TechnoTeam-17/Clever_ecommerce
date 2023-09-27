@@ -1,6 +1,6 @@
 Feature: Login functionality
 
-@SmokeTest
+@SmokeTest @Regression
   Scenario: Login with valid username and password
 
     Given Navigate to clever ECommerce login
