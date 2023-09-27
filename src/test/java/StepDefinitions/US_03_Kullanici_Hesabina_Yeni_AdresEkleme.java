@@ -14,7 +14,8 @@ public class US_03_Kullanici_Hesabina_Yeni_AdresEkleme {
         dc.myClick(dc.siteMap);
         dc.myClick(dc.addresses);
         dc.myClick(dc.newAddress);
-        dc.mySendKeys(dc.address1, "200 North Michigan Avenue");
+        String addressfake=fk.address().cityName();
+        dc.mySendKeys(dc.address1, addressfake);
         dc.myClick(dc.state);
         dc.myClick(dc.illinois);
         dc.mySendKeys(dc.city, "Chicago");
@@ -23,7 +24,7 @@ public class US_03_Kullanici_Hesabina_Yeni_AdresEkleme {
         dc.mySendKeys(dc.mobilephone, "3094563348");
         String kayitliAdresIsmi = fk.address().city().substring(0,5);
         String uni = fk.university().name().substring(0,3);
-        dc.mySendKeys(dc.alias, kayitliAdresIsmi + "  " + uni);
+        dc.mySendKeys(dc.alias, kayitliAdresIsmi + "  " + uni + " "+ "ADDRESS");
         dc.myClick(dc.save);
 
 
