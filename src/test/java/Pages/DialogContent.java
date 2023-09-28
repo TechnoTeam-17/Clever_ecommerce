@@ -138,7 +138,7 @@ public class DialogContent extends Parent {
     @FindBy(xpath="//*[span='Add to cart']")
     public WebElement submit;
 
-    @FindBy(css="[class='button-container']>span>span")
+    @FindBy(xpath="//*[@id='layer_cart']/div[1]/div[2]/div[4]/span/span")
     public WebElement continueshop;
     @FindBy(css="[class='shopping_cart']>a")
     public WebElement viewCart;
