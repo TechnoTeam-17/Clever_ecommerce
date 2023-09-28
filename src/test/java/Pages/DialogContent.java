@@ -235,7 +235,7 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "//a[contains(@class,'bankwire')]")
     public WebElement bankWireMethod;
 
- @FindBy(linkText = "I confirm my order")
+ @FindBy(linkText = "//button[@class='button btn btn-default button-medium'] /span")
     public WebElement iComfirmMyOrder;
 
  @FindBy(xpath = "//p[@class='alert alert-success']")
