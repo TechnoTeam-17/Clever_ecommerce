@@ -1,7 +1,4 @@
-Feature:add product to cart
-  As a user
-  I want to add products to my shopping cart
-  So that I can purchase them later
+Feature: Adding Products to Cart
 
   Background:
 
@@ -9,18 +6,10 @@ Feature:add product to cart
     When Enter username and password and click Sign in button
     Then User should login successfully
 
-  Scenario:Add to Cart
-
-      Given I am on the product page
-      When I click on the "Add to Cart" button for the product
-      Then the product should be added to my shopping cart
-      And the shopping cart should display the correct total price
 
 
-
-  Scenario:Product added to cart successfully
-
-    Given I am on the product page
-      When I click on the "Add to Cart" button for the product
-      Then the product should be added to my shopping cart
-      And I should see a confirmation message "Product added to cart successfully"
+  Scenario: User adds a product to the cart
+    Given navigate to summer dresses
+    When user selects a random product
+    Then user clicks on the add to cart button
+    And product should be successfully added to the cart

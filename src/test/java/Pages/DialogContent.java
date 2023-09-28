@@ -138,6 +138,7 @@ public class DialogContent extends Parent {
 
     @FindBy(xpath = "//*[span='Add to cart']")
     public WebElement submit;
+    
 
 
 
@@ -160,6 +161,22 @@ public class DialogContent extends Parent {
 
 
     //***************************US_04 Locaterlar*************************************************************
+    @FindBy(css = "a[class='product-name']")
+    public List<WebElement> allSummerDresses;
+    @FindBy(css = "button[name='Submit'] > span")
+    public WebElement addToCartButton;
+
+    @FindBy(xpath = "(//span[@class='title'])[1]")
+    public WebElement confirmText;
+
+    @FindBy(css = "a[title='Women']")
+    public WebElement womenButton;
+
+    @FindBy(linkText = "Summer Dresses")
+    public WebElement summerDressesButton;
+
+
+
 
 
     //***************************US_05 Locaterlar***************************************************************
@@ -247,6 +264,7 @@ public class DialogContent extends Parent {
 
  @FindBy(xpath = "//*[@id=\"center_column\"]/div")
     public WebElement orderNumberToSave;
+
 
 
     //***************************US_08 Locaterlar***************************************************************
