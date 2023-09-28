@@ -92,6 +92,7 @@ public class _07_Alpaslan {
         dc.myClick(dc.Dresses);
         dc.myClick(dc.productNameArea);
         dc.myClick(dc.addToCartButtonInProductPage);
+        GWD.getDriver().navigate().back();
        // Actions aksiyonlar = new Actions(GWD.getDriver());
        // Action aksiyon2 = aksiyonlar.moveToElement(dc.productContainerAreaForEach).build();
        // aksiyon2.perform();// element in üzerine gel
