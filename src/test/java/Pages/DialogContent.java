@@ -235,13 +235,13 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "//a[contains(@class,'bankwire')]")
     public WebElement bankWireMethod;
 
- @FindBy(linkText = "//button[@class='button btn btn-default button-medium'] /span")
+ @FindBy(xpath = "//button[@class='button btn btn-default button-medium'] /span")
     public WebElement iComfirmMyOrder;
 
  @FindBy(xpath = "//p[@class='alert alert-success']")
     public WebElement yourOrderSuccessMessage;
 
- @FindBy(xpath = "//*[@id=\"center_column\"]/div/text()[6]")
+ @FindBy(xpath = "//*[@id=\"center_column\"]/div")
     public WebElement orderNumberToSave;
 
 
@@ -290,6 +290,9 @@ public class DialogContent extends Parent {
 
             case "bankWireMethod":
                 return this.bankWireMethod;
+
+            case "orderNumberToSave":
+                return this.orderNumberToSave;
 
 
         }

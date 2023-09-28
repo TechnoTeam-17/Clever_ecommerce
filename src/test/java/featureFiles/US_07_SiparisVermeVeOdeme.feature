@@ -9,12 +9,8 @@ Feature: Adding a new address Functionality
 
 
     Then Add product to Cart
-
-
     Then Click to Cart
     Then Click to checkout
-    #Then Choose the delivery address
-   # Then Click to checkout
     Then Click to checkout_LinkTextDegil_
     Then Choose the agree terms
     Then Click to checkout_LinkTextDegil_
@@ -25,7 +21,6 @@ Feature: Adding a new address Functionality
     Then Assert to invalid request
     Then Navigate to back
     Then Click to Wire payment method
-#    Then Assert to assure price of product plus delivery
     Then Click to I confirm the my order
     Then Assert to the text of _Your order on Xu Clothing is complete_
     Then Save the order number on the page like VKXXEJRFY
