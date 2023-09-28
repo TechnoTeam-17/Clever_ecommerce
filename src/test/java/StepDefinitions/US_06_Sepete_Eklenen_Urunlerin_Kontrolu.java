@@ -17,71 +17,43 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class US_06_Sepete_Eklenen_Urunlerin_Kontrolu {
-    DialogContent dc=new DialogContent();
-    ArrayList<String> al1=new ArrayList<String>();
-    ArrayList<String> al2=new ArrayList<String>();
-    Actions aksiyonlar=new Actions(GWD.getDriver());
-    String a="";
-    String b="";
+
+    DialogContent dc = new DialogContent();
+    ArrayList<String> al1 = new ArrayList<String>();
+    ArrayList<String> al2 = new ArrayList<String>();
+    Actions aksiyonlar = new Actions(GWD.getDriver());
+    WebElement a;
+    String b = "";
 
     @Given("Click Dresses category select a random first item")
     public void clickDressesCategorySelectARandomFirstItem() {
-        //   GWD.getDriver().get("https://cleverppc.com/prestashop4/");
-        dc.Anasayfa.click();
+        GWD.getDriver().get("https://cleverppc.com/prestashop4/");
+        //  dc.Anasayfa.click();
         dc.myClick(dc.Dresses);
 
-
-        //  [id="product_list"]>li
-        List<WebElement> l1 = GWD.getDriver().findElements(By.cssSelector("[id='product_list']>li"));
-        System.out.println("l1 = " + l1.get(((int) (Math.random() * l1.size()))).getText());
-        Action aksiyon = aksiyonlar.moveToElement(l1.get(((int) (Math.random() * l1.size())))).build(); // element in üzerine gel
-        Action aksiyon2 = aksiyonlar.moveToElement(dc.submit).click().build(); // element in üzerine gel
+        List<WebElement> l1 = GWD.getDriver().findElements(By.xpath("//*[@id='product_list']/li[1]/div/div[2]/h5/a"));
+        Action aksiyon = aksiyonlar.moveToElement(l1.get(((int) (Math.random() * l1.size())))).build();
         aksiyon.perform();
-        aksiyon2.perform();
 
-
-        // List<WebElement> l1 = dc.dressler;
-        //   System.out.println("l1 = " + l1.get(((int) (Math.random() * l1.size()))).getText());
-        //    a=l1.get(((int) (Math.random() * l1.size()))).getTagName();
-        //    l1.get(((int) (Math.random() * l1.size()))).click();
-
-
-        //   dc.myClick(dc.continueshop);
-        //   dc.myClick(dc.viewCart);
-        //     List<WebElement> l2 = dc.demoview;
-        //     for (WebElement a:l2
-        //          ) {
-        //         System.out.println("l2 = " + a.getText());
-        //      }
-        //  }
     }
-       @When("Click the Add To Cart")
-       public void clickTheAddToCart() {
-       //    Action aksiyon = aksiyonlar.moveToElement(dc.submit).click().build(); // element in üzerine gel
-        //   aksiyon.perform();
 
-      }
+    @When("Click the Add To Cart")
+    public void clickTheAddToCart() {
+        WebElement l2 = GWD.getDriver().findElement(By.xpath("//*[@id='product_list']/li[1]/div/div[2]/div[2]/a[1]/span"));
+        Action aksiyon2 = aksiyonlar.moveToElement(l2).click().build();
+        aksiyon2.perform();
+    }
 
 
-        ///   @Then("Navigate to Continue Shopping")
-        //   public void navigateToContinueShopping() {
-        //       dc.myClick(dc.continueshop);
-        // dc.myClick(dc.Dresses);
-        // }
-//@When("Select different a random second item")
+      @Then("Navigate to Continue Shopping")
+      public void navigateToContinueShopping() {
+          dc.myClick(dc.continueshop);
+          dc.myClick(dc.Dresses);
+    }
+ //   @When("Select different a random second item")
 //public void selectDifferentARandomSecondItem() {
 // //   dc.myClick(dc.viewCart);
 //  //  dc.myClick(dc.Dresses);
 
-//    List<WebElement> l2 = dc.dressler;
-//    System.out.println("l1 = " + l2.get(((int) (Math.random() * l2.size()))).getText());
-//    b=l2.get(((int) (Math.random() * l2.size()))).getText();
-//    l2.get(((int) (Math.random() * l2.size()))).click();
 
-//        if (a.equals(b)) {
-//            l2.get(((int) (Math.random() * l2.size()))); }
-
-//    System.out.println("l2 = "
-//            + l2.get(((int) (Math.random() * l2.size()))).getText());
-//        }
-    }
+}
