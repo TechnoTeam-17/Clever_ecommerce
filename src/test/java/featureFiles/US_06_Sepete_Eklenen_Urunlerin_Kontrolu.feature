@@ -1,22 +1,13 @@
 
 Feature: US_06_CheckAddToCartList
 
- #   Background:
- #      Given Navigate to clever ECommerce login
- #      When Enter username and password and click Sign in button
+   Background:
+     Given Navigate to clever ECommerce login
+     When Enter username and password and click Sign in button
 
   @Test
   Scenario: Add To Cart List
 
-    Given Click Dresses category select a random first item
-    When Click the Add To Cart
-    Then Navigate to Continue Shopping
-
- # When Select different a random second item
- # Then Click the Add To Cart
-
- #  When Navigate to Continue Shopping
- #  Then Select different a random third item
-
- #  And Verify 3 products in the shopping cart
+    Given Click Dresses category select a random item
+    When Verify all products in the shopping cart
 

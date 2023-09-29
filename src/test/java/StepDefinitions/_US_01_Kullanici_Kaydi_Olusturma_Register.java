@@ -2,6 +2,7 @@ package StepDefinitions;
 
 import Pages.DialogContent;
 import Utilities.GWD;
+import com.github.javafaker.Faker;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -10,7 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class _US_01_Kullanici_Kaydi_Olusturma_Register {
     DialogContent dc = new DialogContent();
-
+    Faker fk = new Faker();
     @Given("Navigate to clever ECommerce register")
     public void navigateToCleverECommerce() {
         GWD.getDriver().get("https://cleverppc.com/prestashop4/index.php?controller=authentication&back=my-account");
@@ -19,7 +20,8 @@ public class _US_01_Kullanici_Kaydi_Olusturma_Register {
     @When("Enter click Sign in button")
     public void enterUsernameandpasswordandclickSigninButton() {
         dc.myClick(dc.SigninButton);
-        dc.mySendKeys(dc.email,"miriam1@gmail.com");
+        String emailfake=fk.name().firstName().concat("@gmail.com");
+        dc.mySendKeys(dc.email,emailfake);
         dc.myClick(dc.CreateAccount);
 
     }
