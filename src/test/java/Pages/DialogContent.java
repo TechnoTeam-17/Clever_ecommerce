@@ -143,10 +143,14 @@ public class DialogContent extends Parent {
 
 
 
+   // @FindBy(xpath="//*[@id='layer_cart']/div[1]/div[2]/div[4]/span/span")
 
-    @FindBy(css = "[class='button-container']>span>span")
 
-    public WebElement continueshop;
+
+
+   // @FindBy(css = "[class='button-container']>span>span")
+
+  //  public WebElement continueshop;
     @FindBy(css = "[class='shopping_cart']>a")
     public WebElement viewCart;
 
@@ -268,6 +272,18 @@ public class DialogContent extends Parent {
 
 
     //***************************US_08 Locaterlar***************************************************************
+    @FindBy(xpath = "//*[@id='contact-link']")
+    public WebElement contactUs;
+
+ @FindBy(xpath = "//*[@id='submitMessage']")
+    public WebElement submitMessage;
+    @FindBy(xpath = "//div[@class='form-group selector1']")
+    public WebElement selectProduct2;
+
+@FindBy(xpath = "//textarea[@class='form-control']")
+    public WebElement messageBox;
+
+
 
 
     public WebElement getWebElement(String strElement) {
@@ -315,6 +331,13 @@ public class DialogContent extends Parent {
 
             case "orderNumberToSave":
                 return this.orderNumberToSave;
+
+
+            case "selectProduct2":
+                return this.selectProduct2;
+
+            case "submitMessage":
+                return this.submitMessage;
 
 
         }
