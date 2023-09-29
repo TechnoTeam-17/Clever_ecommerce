@@ -6,17 +6,17 @@ In this project we use JAVA and Test Tools.
 
 Domain: https://cleverppc.com/prestashop4/
 
-##Team
+##Team-17 technostudyteam17@gmail.com
 
-- Neslihan Terlemez - QA Lead
-- Alpaslan Alemdar - Tester
-- Ahmet Hakan - Tester
-- Nergis Reçel - Tester
-- Hakan Kılıç - Tester
-- Aygul Abilova - Tester
-- Omer Al- Tester
-- Sokol Rrustemi- Tester
- 
+- Neslihan Terlemez - QA Lead ( terlemez.neslihan@gmail.com )
+- Alpaslan Alemdar - Tester   ( alpaslanalemdar@yandex.com)
+- Nergis Reçel - Tester (nergisrecel@hotmail.com)
+- Hakan Kılıç - Tester   (Aliyamnuveybam@gmail.com)
+- Aygul Abilova - Tester (abilovaygul@gmail.com)
+- Omer Al- Tester (xfinaldest@gmail.com)
+- Sokol Rrustemi- Tester (sokolrrustemi@gmail.com)
+   
+
 Getting Started
 ---------------
 
