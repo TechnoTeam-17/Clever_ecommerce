@@ -148,9 +148,8 @@ public class DialogContent extends Parent {
 
 
 
-   // @FindBy(css = "[class='button-container']>span>span")
-
-  //  public WebElement continueshop;
+   @FindBy(css = "[class='button-container']>span>span")
+    public WebElement continueshop;
     @FindBy(css = "[class='shopping_cart']>a")
     public WebElement viewCart;
 
